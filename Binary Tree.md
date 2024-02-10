@@ -22,10 +22,10 @@ void helper(TreeNode* root)
 ![DFS Visualization](https://i.stack.imgur.com/FFWk3.png)
 
 ## Generic Method
-Store every node with their state which signifies their order during traversal.
-PreOrder	: go to left child
-InOrder	: go to right child
-PostOrder: remove node from stack 
+Store every node with their state which signifies their order during traversal.<br>
+PreOrder	: go to left child<br>
+InOrder	: go to right child<br>
+PostOrder: remove node from stack<br> 
 
 ```cpp
 stack<pair<TreeNode*, int>> stk;
@@ -76,8 +76,8 @@ while (root || !stk.empty())
 {
     if (root)
     {
-		stk.push(root);
-		root = root -> left;
+	stk.push(root);
+	root = root -> left;
     }
     else
     {
