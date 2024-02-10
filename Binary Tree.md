@@ -40,9 +40,9 @@ while (not empty)
 	
 	// Add root's value to result depending on order.
 	
-	if (0) push left child; 		// preorder
+	if (0) push left child; 	// preorder
 	else if (1) push right child;	// inorder
-	else stk.pop(); 				// postorder
+	else stk.pop(); 		// postorder
 }
 ```
 
@@ -55,9 +55,9 @@ while (root || !stk.empty())
 {
     if (root)
     {
-	    preorder.push(root);
-		if (right) stk.push(right);
-		root = root -> left;
+	preorder.push(root);
+	if (right) stk.push(right);
+	root = root -> left;
     }
     else
     {
