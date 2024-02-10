@@ -1,6 +1,25 @@
 # BFS (Level Order)
 It is performed using a **queue**.
-Add root to queue, while queue isn't empty traverse it and add children of every node to the queue. 
+Add root to queue, while queue isn't empty traverse it and add children of every node to the queue.
+
+```cpp
+queue q;
+int sz;
+q.push(root);
+
+while (!q.empty())
+{
+    int sz = q.size();
+    while (sz--)
+    {
+        auto root = q.front();
+        q.pop();
+
+        if (left) q.push(left);
+        if (right) q.push(right);
+    }
+}
+```
 
 # Recursive DFS
 
