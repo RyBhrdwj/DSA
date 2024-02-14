@@ -9,7 +9,69 @@
 # Implementation
 
 ```cpp
+class Node 
+{
+    int data;
+    Node *next;
 
+public:
+
+    Node(int x) 
+    {
+        data = x;
+        next = nullptr;
+    }
+    
+    Node(int x, Node *next)
+    {
+        data = x;
+        this -> next = next;
+    }
+};
+
+class Stack 
+{
+    int size;
+    Node *back;
+
+public:
+
+    Stack() 
+    {
+        size = 0;
+        back = nullptr;
+    }
+
+    void push(int x) 
+    {
+        Node *node = new Node(x, back);
+        size++;
+    }
+
+    void pop()
+    {
+        if (!size) return;
+
+        Node *temp = back;
+        
+        back = back -> next;
+        size--;
+        
+        delete temp;
+    }
+
+    int top()
+    {
+        if (!size) return;
+
+        return back -> data;
+    }
+
+    bool empty()
+    {
+        return !size;
+    }
+};
 ```
 
 # Identification
