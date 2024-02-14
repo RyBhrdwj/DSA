@@ -10,7 +10,9 @@
 # Implementation
 
 The start of linked list would represent the top of stack.
+
 Push -> make a new node & point it to top.
+
 Pop -> if not empty, delete top and update it to next node.
 
 ```cpp
