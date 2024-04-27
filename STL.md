@@ -2,6 +2,11 @@
 
 minmax() : returns pair with min and max element
 
+ceil() : returns the smallest integer > value (eg. ceil(1.1) = 2)
+floor() : returns the largest integer < value (eg. floor(-1.9) = -2)
+
+![image](https://github.com/RyBhrdwj/DSA/assets/95015767/5bca4047-a83d-48a1-bf64-9106eebb9cd3)
+
 ## Binary Search
 - Both functions take upto 4 arguments
     - all(v)
