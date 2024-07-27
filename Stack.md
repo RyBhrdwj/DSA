@@ -4,7 +4,7 @@
 - Implemented using linked list
 - push, pop, size, empty - O(1)
 - Vector vs Stack
-	- Search takes O(1) in vector using indices but stack takes O(N)
+	- Access takes O(1) in vector using indices but stack takes O(N)
 	- Vector takes amortized O(1) to resize but stack resizes in O(1)
 
 # Implementation
